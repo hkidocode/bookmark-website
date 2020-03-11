@@ -1,0 +1,23 @@
+{
+  "name": "sass-project",
+  "version": "0.1.0",
+  "description": "Firdt local project with SASS",
+  "main": "main.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/main.css",
+    "watch": "node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkidocode/sass-project.git"
+  },
+  "author": "Mustapha Kadouri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkidocode/sass-project/issues"
+  },
+  "homepage": "https://github.com/hkidocode/sass-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
