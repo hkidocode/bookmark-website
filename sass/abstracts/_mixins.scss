@@ -1,0 +1,20 @@
+// Buttons Rounded Corners
+@mixin round-corners($w, $h, $br) {
+    width: $w;
+    height: $h;
+    border-radius: 3px;
+    border: $br;
+}
+
+// Flex Container 
+@mixin flexy(
+    $disp : flex,
+    $dir : null,
+    $wrap : null,
+    $just : null) {
+        display: flex;
+        flex-direction: $dir;
+        flex-wrap: $wrap;
+        justify-content: $just;
+    
+}
