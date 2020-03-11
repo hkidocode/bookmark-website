@@ -1,0 +1,18 @@
+@import 'variables';
+
+// Px to Em
+@function em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+// Px to Percentage 
+@function px-to-pct($target, $context: $base__font-size) {
+    @return ($target / $context) * 100%;
+}
+
+// Number of flex items per line
+@function per-line($items) {
+    $g-pct : px-to-pct(£gutter * 2);
+    $g-total: $items * $g-pct;
+    @return (100% / $items) - $g-total;
+}

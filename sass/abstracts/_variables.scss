@@ -13,3 +13,14 @@ $letter-space : 1px;
 $font-weight__light : 400;
 $font-weight__medium : 500;
 
+// Breakpoints
+$break-xs : 375px;
+$break-s : 576px;
+$break-m : 768px;
+$break-l : 992px;
+$break-xl : 1185px;
+$break-xxl : 1400px;
+
+// Layout
+$max-width : 1000px;
+$gutter: 20px;
