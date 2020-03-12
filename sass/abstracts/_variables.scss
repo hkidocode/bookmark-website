@@ -3,11 +3,15 @@ $color-primary__soft-blue : hsl(231, 69%, 60%);
 $color-primary__soft-red : hsl(0, 94%, 66%);
 $color-neutral__grayish-blue : hsl(229, 8%, 60%);
 $color-neutral__very-dark-blue : hsl(229, 31%, 21%);
+$color-neutral__light-dark-blue : rgba(0, 51, 102, 1);
+
 
 // Text
 $base__font-size : 18px;
 $base__line : 26px;
-$letter-space : 1px;
+$letter-space-heading : 1px;
+$text-font-stack : 'Rubik', Helvetica, Arial, sans-serif;
+
 
 // Font Weights
 $font-weight__light : 400;
@@ -24,3 +28,14 @@ $break-xxl : 1400px;
 // Layout
 $max-width : 1000px;
 $gutter: 20px;
+
+// Logo mobile dimension 
+$logo-width : 40%;
+$logo-height : 15%;
+
+// Padding
+$header-padding : 30px;
+
+// Margin
+$nav-margin : 20px;
+$text-margin : 20px;

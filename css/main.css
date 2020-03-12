@@ -1,0 +1,112 @@
+body {
+  font-family: "Rubik", Helvetica, Arial, sans-serif; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+.header {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+.navbar__logo {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+  .navbar__logo--img {
+    width: 40%;
+    height: 15%; }
+
+.nav {
+  text-align: center;
+  line-height: 4;
+  background-color: #003366; }
+  .nav__item {
+    margin: 0 30px;
+    border-bottom: 1px solid grey; }
+    .nav__item--link {
+      color: white;
+      font-weight: 400; }
+  .nav__login {
+    margin: 0 30px;
+    margin-top: 26px; }
+    .nav__login--link {
+      color: white;
+      border: 2px solid grey;
+      border-radius: 3px;
+      padding: 10px 96px;
+      font-weight: 500; }
+
+.header-image {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px; }
+  .header-image__img {
+    width: 92vw; }
+  .header-image__bg {
+    text-align: left;
+    background-color: #5368df;
+    width: 260px;
+    height: 196px;
+    border-radius: 0 0 0 90px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: -1; }
+
+.header__heading {
+  color: #003366;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.66667em;
+  letter-spacing: 1px; }
+
+.header__description {
+  line-height: 1.7;
+  color: #9194a1;
+  margin-bottom: 20px;
+  font-size: 1em; }
+
+.header__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px; }
+  .header__buttons--chrome {
+    padding: 14px;
+    background-color: #5368df;
+    border-radius: 5px;
+    font-size: 0.88889em;
+    width: 150px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-right: 20px; }
+  .header__buttons--firefox {
+    padding: 14px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 0.88889em;
+    width: 150px;
+    font-weight: bold;
+    color: #9194a1; }
+
+header {
+  padding-top: 30px;
+  padding-bottom: 30px; }
