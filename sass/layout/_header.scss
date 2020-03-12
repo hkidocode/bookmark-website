@@ -13,7 +13,7 @@ header {
     }
 
     &__bg {
-        text-align: left;
+        text-align: center;
         background-color: $color-primary__soft-blue;
         @include round-shapes(260px, 196px, 0 0 0 90px);
         top: 50px;

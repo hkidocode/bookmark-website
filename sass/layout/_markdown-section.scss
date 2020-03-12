@@ -1,0 +1,12 @@
+.bookmark-section {
+    @extend %center;
+    &__heading {
+        @include h-style-m(em(30px));
+    } 
+
+    &__description {
+        @include p-style-m(1.7, em(18px));
+    }
+}
+
+

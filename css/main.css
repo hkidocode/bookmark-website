@@ -15,12 +15,12 @@ li {
 a {
   text-decoration: none; }
 
-.feature-section, .header {
+.header, .feature-section, .bookmark-section {
   width: 80%;
   margin: auto;
   text-align: center; }
 
-.feature-section, .header {
+.header, .feature-section, .bookmark-section {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -54,50 +54,6 @@ a {
       padding: 10px 96px;
       font-weight: 500; }
 
-.feature-section__heading {
-  color: #003366;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.66667em;
-  letter-spacing: 1px; }
-
-.feature-section__description {
-  line-height: 1.7;
-  color: #9194a1;
-  margin-bottom: 20px;
-  font-size: 1em; }
-
-.menu {
-  text-align: center;
-  line-height: 3.8;
-  margin-bottom: 60px; }
-  .menu__item {
-    margin: 0 30px;
-    border-bottom: 1px solid grey; }
-    .menu__item:first-child {
-      border-top: 1px solid grey; }
-    .menu__item--link {
-      color: #9194a1;
-      font-weight: 400; }
-
-.bookmark-image {
-  text-align: center;
-  position: relative;
-  margin-bottom: 40px; }
-  .bookmark-image__img {
-    width: 92vw; }
-  .bookmark-image__bg {
-    text-align: left;
-    background-color: #5368df;
-    width: 260px;
-    height: 196px;
-    border-radius: 0 0 0 90px;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    z-index: -1; }
-
 header {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -109,7 +65,7 @@ header {
   .header-image__img {
     width: 92vw; }
   .header-image__bg {
-    text-align: left;
+    text-align: center;
     background-color: #5368df;
     width: 260px;
     height: 196px;
@@ -154,3 +110,62 @@ header {
     width: 150px;
     font-weight: bold;
     color: #9194a1; }
+
+.feature-section__heading {
+  color: #003366;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.66667em;
+  letter-spacing: 1px; }
+
+.feature-section__description {
+  line-height: 1.7;
+  color: #9194a1;
+  margin-bottom: 20px;
+  font-size: 1em; }
+
+.menu {
+  text-align: center;
+  line-height: 3.8;
+  margin-bottom: 60px; }
+  .menu__item {
+    margin: 0 30px;
+    border-bottom: 1px solid grey; }
+    .menu__item:first-child {
+      border-top: 1px solid grey; }
+    .menu__item--link {
+      color: #9194a1;
+      font-weight: 400; }
+
+.bookmark-image {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px; }
+  .bookmark-image__img {
+    width: 80vw; }
+  .bookmark-image__bg {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #5368df;
+    width: 260px;
+    height: 196px;
+    border-radius: 0 0 90px 0;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: -1; }
+
+.bookmark-section__heading {
+  color: #003366;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.66667em;
+  letter-spacing: 1px; }
+
+.bookmark-section__description {
+  line-height: 1.7;
+  color: #9194a1;
+  margin-bottom: 20px;
+  font-size: 1em; }
