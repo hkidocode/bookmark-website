@@ -41,7 +41,37 @@
 }
 
 
-.header-image {
+
+.feature-section {
+    @extend %center;
+    &__heading {
+        @include h-style-m(em(30px));
+    } 
+
+    &__description {
+        @include p-style-m(1.7, em(18px));
+    }
+}
+
+.menu {
+    text-align: center;
+    line-height: 3.8;
+    margin-bottom: 60px;
+    &__item {
+        margin: 0 30px;
+        border-bottom: 1px solid grey;
+        &:first-child {
+            border-top: 1px solid grey;
+        }
+        &--link {
+            color: $color-neutral__grayish-blue;
+            font-weight: $font-weight__light;
+
+        }
+    }
+}
+
+.bookmark-image {
     text-align: center;
     position: relative;
     margin-bottom: 40px;
@@ -58,40 +88,3 @@
         z-index: -1;
     }
 }
-
-.header {
-    @extend %center;
-    &__heading {
-        @include h-style-m(em(30px));
-    } 
-
-    &__description {
-        @include p-style-m(1.7, em(18px));        
-    }
-    
-    &__buttons {
-        @include flexy($just: space-around);
-        margin-bottom: 120px;
-        &--chrome {
-            padding: 14px;
-            background-color: $color-primary__soft-blue;
-            border-radius: 5px;
-            font-size: em(16px);
-            width: 150px;
-            font-weight: bold;
-            color: whitesmoke;
-            margin-right: 20px;
-        }
-        &--firefox {
-            padding: 14px;
-            background-color: whitesmoke;
-            border-radius: 5px;
-            font-size: em(16px);
-            width: 150px;
-            font-weight: bold;
-            color: $color-neutral__grayish-blue;
-
-        }
-    }
-}
-

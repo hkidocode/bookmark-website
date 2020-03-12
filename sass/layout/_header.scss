@@ -3,3 +3,57 @@ header {
     padding-top: $header-padding;
     padding-bottom: $header-padding;
 }
+
+.header-image {
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    &__img {
+        width: 92vw;
+    }
+
+    &__bg {
+        text-align: left;
+        background-color: $color-primary__soft-blue;
+        @include round-shapes(260px, 196px, 0 0 0 90px);
+        top: 50px;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.header {
+    @extend %center;
+    &__heading {
+        @include h-style-m(em(30px));
+    } 
+
+    &__description {
+        @include p-style-m(1.7, em(18px));        
+    }
+    
+    &__buttons {
+        @include flexy($just: space-around);
+        margin-bottom: 120px;
+        &--chrome {
+            padding: 14px;
+            background-color: $color-primary__soft-blue;
+            border-radius: 5px;
+            font-size: em(16px);
+            width: 150px;
+            font-weight: bold;
+            color: whitesmoke;
+            margin-right: 20px;
+        }
+        &--firefox {
+            padding: 14px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            font-size: em(16px);
+            width: 150px;
+            font-weight: bold;
+            color: $color-neutral__grayish-blue;
+
+        }
+    }
+}
