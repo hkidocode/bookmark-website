@@ -1,0 +1,110 @@
+.download-section {
+    @extend %center;
+    &__heading {
+        @include h-style-m(em(30px));
+    } 
+
+    &__description {
+        @include p-style-m(1.7, em(18px));
+    }
+}
+
+.chrome {
+    height: 390px;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    &__img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__heading {
+        color: $color-neutral__very-dark-blue;
+        margin-bottom: 16px;
+    }
+    &__description {
+        color: $color-neutral__grayish-blue;
+        margin-bottom: 40px;
+    }
+    &__decoration {
+        margin-bottom: 16px;
+    }
+    &__button {
+        background-color: $color-primary__soft-blue;
+        margin: 0 20px;
+        padding: 14px 0;
+        border-radius: 6px;
+        &--link {
+            color: whitesmoke;
+            font-weight: $font-weight__medium;
+
+        }
+    }
+}
+
+.firefox {
+    height: 390px;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    &__img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__heading {
+        color: $color-neutral__very-dark-blue;
+        margin-bottom: 16px;
+    }
+    &__description {
+        color: $color-neutral__grayish-blue;
+        margin-bottom: 40px;
+    }
+    &__decoration {
+        margin-bottom: 16px;
+    }
+    &__button {
+        background-color: $color-primary__soft-blue;
+        margin: 0 20px;
+        padding: 14px 0;
+        border-radius: 6px;
+        &--link {
+            color: whitesmoke;
+            font-weight: $font-weight__medium;
+
+        }
+    }
+}
+
+.opera {
+    height: 390px;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    &__img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__heading {
+        color: $color-neutral__very-dark-blue;
+        margin-bottom: 16px;
+    }
+    &__description {
+        color: $color-neutral__grayish-blue;
+        margin-bottom: 40px;
+    }
+    &__decoration {
+        margin-bottom: 16px;
+    }
+    &__button {
+        background-color: $color-primary__soft-blue;
+        margin: 0 20px;
+        padding: 14px 0;
+        border-radius: 6px;
+        &--link {
+            color: whitesmoke;
+            font-weight: $font-weight__medium;
+
+        }
+    }
+}
+ 

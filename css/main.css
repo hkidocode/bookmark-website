@@ -15,12 +15,12 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .bookmark-section {
+.header, .feature-section, .bookmark-section, .download-section {
   width: 80%;
   margin: auto;
   text-align: center; }
 
-.header, .feature-section, .bookmark-section {
+.header, .feature-section, .bookmark-section, .download-section {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -156,7 +156,22 @@ header {
     left: 0;
     z-index: -1; }
 
-.bookmark-section__heading {
+.bookmark-section {
+  margin-bottom: 120px; }
+  .bookmark-section__heading {
+    color: #003366;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.66667em;
+    letter-spacing: 1px; }
+  .bookmark-section__description {
+    line-height: 1.7;
+    color: #9194a1;
+    margin-bottom: 20px;
+    font-size: 1em; }
+
+.download-section__heading {
   color: #003366;
   font-weight: bold;
   margin-top: 20px;
@@ -164,8 +179,83 @@ header {
   font-size: 1.66667em;
   letter-spacing: 1px; }
 
-.bookmark-section__description {
+.download-section__description {
   line-height: 1.7;
   color: #9194a1;
   margin-bottom: 20px;
   font-size: 1em; }
+
+.chrome {
+  height: 390px;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  margin-bottom: 36px; }
+  .chrome__img {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .chrome__heading {
+    color: #252b46;
+    margin-bottom: 16px; }
+  .chrome__description {
+    color: #9194a1;
+    margin-bottom: 40px; }
+  .chrome__decoration {
+    margin-bottom: 16px; }
+  .chrome__button {
+    background-color: #5368df;
+    margin: 0 20px;
+    padding: 14px 0;
+    border-radius: 6px; }
+    .chrome__button--link {
+      color: whitesmoke;
+      font-weight: 500; }
+
+.firefox {
+  height: 390px;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  margin-bottom: 36px; }
+  .firefox__img {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .firefox__heading {
+    color: #252b46;
+    margin-bottom: 16px; }
+  .firefox__description {
+    color: #9194a1;
+    margin-bottom: 40px; }
+  .firefox__decoration {
+    margin-bottom: 16px; }
+  .firefox__button {
+    background-color: #5368df;
+    margin: 0 20px;
+    padding: 14px 0;
+    border-radius: 6px; }
+    .firefox__button--link {
+      color: whitesmoke;
+      font-weight: 500; }
+
+.opera {
+  height: 390px;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  margin-bottom: 36px; }
+  .opera__img {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .opera__heading {
+    color: #252b46;
+    margin-bottom: 16px; }
+  .opera__description {
+    color: #9194a1;
+    margin-bottom: 40px; }
+  .opera__decoration {
+    margin-bottom: 16px; }
+  .opera__button {
+    background-color: #5368df;
+    margin: 0 20px;
+    padding: 14px 0;
+    border-radius: 6px; }
+    .opera__button--link {
+      color: whitesmoke;
+      font-weight: 500; }
