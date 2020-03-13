@@ -45,3 +45,14 @@
 
     
 }
+
+// Button Style 
+@mixin btn-style($pd, $bg-color, $w, $color ) {
+    padding: $pd;
+    background-color: $bg-color;
+    border-radius: 6px;
+    font-size: em(16px);
+    width: $w;
+    font-weight: bold;
+    color: $color;
+}

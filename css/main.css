@@ -15,12 +15,12 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .bookmark-section, .download-section {
+.header, .feature-section, .bookmark-section, .download-section, .questions-section {
   width: 80%;
   margin: auto;
   text-align: center; }
 
-.header, .feature-section, .bookmark-section, .download-section {
+.header, .feature-section, .bookmark-section, .download-section, .questions-section {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -96,7 +96,7 @@ header {
   .header__buttons--chrome {
     padding: 14px;
     background-color: #5368df;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 0.88889em;
     width: 150px;
     font-weight: bold;
@@ -105,7 +105,7 @@ header {
   .header__buttons--firefox {
     padding: 14px;
     background-color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 0.88889em;
     width: 150px;
     font-weight: bold;
@@ -171,19 +171,20 @@ header {
     margin-bottom: 20px;
     font-size: 1em; }
 
-.download-section__heading {
-  color: #003366;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.66667em;
-  letter-spacing: 1px; }
-
-.download-section__description {
-  line-height: 1.7;
-  color: #9194a1;
-  margin-bottom: 20px;
-  font-size: 1em; }
+.download-section {
+  margin-bottom: 120px; }
+  .download-section__heading {
+    color: #003366;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.66667em;
+    letter-spacing: 1px; }
+  .download-section__description {
+    line-height: 1.7;
+    color: #9194a1;
+    margin-bottom: 20px;
+    font-size: 1em; }
 
 .chrome {
   height: 390px;
@@ -259,3 +260,52 @@ header {
     .opera__button--link {
       color: whitesmoke;
       font-weight: 500; }
+
+.questions-section__heading {
+  color: #003366;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.66667em;
+  letter-spacing: 1px; }
+
+.questions-section__description {
+  line-height: 1.7;
+  color: #9194a1;
+  margin-bottom: 20px;
+  font-size: 1em; }
+
+.tab-group {
+  text-align: left;
+  max-width: 375px;
+  width: 100%;
+  padding-bottom: 30px; }
+
+.tab {
+  width: 100%; }
+  .tab__one {
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    line-height: 4;
+    color: #252b46;
+    margin-bottom: 20px;
+    background-image: url(../../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 0.94444em; }
+  .tab__content {
+    height: 0;
+    overflow: hidden; }
+  .tab__content p {
+    margin: 1em 0; }
+
+.info-button {
+  padding: 14px;
+  background-color: #5368df;
+  border-radius: 6px;
+  font-size: 0.88889em;
+  width: 110px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: auto;
+  margin-bottom: 110px; }

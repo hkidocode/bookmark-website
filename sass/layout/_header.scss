@@ -36,23 +36,11 @@ header {
         @include flexy($just: space-around);
         margin-bottom: 120px;
         &--chrome {
-            padding: 14px;
-            background-color: $color-primary__soft-blue;
-            border-radius: 5px;
-            font-size: em(16px);
-            width: 150px;
-            font-weight: bold;
-            color: whitesmoke;
+            @include btn-style(14px, $color-primary__soft-blue, 150px, whitesmoke);
             margin-right: 20px;
         }
         &--firefox {
-            padding: 14px;
-            background-color: whitesmoke;
-            border-radius: 5px;
-            font-size: em(16px);
-            width: 150px;
-            font-weight: bold;
-            color: $color-neutral__grayish-blue;
+            @include btn-style(14px, whitesmoke, 150px, $color-neutral__grayish-blue);
 
         }
     }
