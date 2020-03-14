@@ -15,12 +15,12 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .bookmark-section, .download-section, .questions-section {
+.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form {
   width: 80%;
   margin: auto;
   text-align: center; }
 
-.header, .feature-section, .bookmark-section, .download-section, .questions-section {
+.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -96,19 +96,19 @@ header {
   .header__buttons--chrome {
     padding: 14px;
     background-color: #5368df;
+    width: 150px;
     border-radius: 6px;
     font-size: 0.88889em;
-    width: 150px;
-    font-weight: bold;
+    font-weight: 700;
     color: whitesmoke;
     margin-right: 20px; }
   .header__buttons--firefox {
     padding: 14px;
     background-color: whitesmoke;
+    width: 150px;
     border-radius: 6px;
     font-size: 0.88889em;
-    width: 150px;
-    font-weight: bold;
+    font-weight: 700;
     color: #9194a1; }
 
 .feature-section__heading {
@@ -286,7 +286,7 @@ header {
   .tab__one {
     display: block;
     border-bottom: 1px solid gainsboro;
-    line-height: 4;
+    line-height: 3;
     color: #252b46;
     margin-bottom: 20px;
     background-image: url(../../images/icon-arrow.svg);
@@ -300,12 +300,41 @@ header {
     margin: 1em 0; }
 
 .info-button {
-  padding: 14px;
+  padding: 14px 18px;
   background-color: #5368df;
+  width: 110px;
   border-radius: 6px;
   font-size: 0.88889em;
-  width: 110px;
-  font-weight: bold;
+  font-weight: 700;
   color: whitesmoke;
   margin: auto;
   margin-bottom: 110px; }
+
+.form-section {
+  background-color: #5368df;
+  padding-top: 60px;
+  padding-bottom: 30px; }
+
+.form__paragraph {
+  color: whitesmoke;
+  letter-spacing: 4px;
+  font-size: 0.66667em;
+  margin-bottom: 8px; }
+
+.form__heading {
+  color: whitesmoke;
+  font-size: 1.22222em;
+  letter-spacing: 2px;
+  margin-bottom: 20px; }
+
+.form__input {
+  display: block;
+  margin: auto; }
+
+.form__button {
+  background-color: #fa5757;
+  padding: 14px 40px;
+  border-radius: 6px;
+  margin-top: 16px; }
+  .form__button--link {
+    color: whitesmoke; }

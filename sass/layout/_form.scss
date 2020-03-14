@@ -1,0 +1,39 @@
+.form-section {
+    background-color: $color-primary__soft-blue;
+    padding-top: 60px;
+    padding-bottom: 30px;
+} 
+
+.form {
+    @extend %center;
+    &__paragraph {
+        color: whitesmoke;
+        letter-spacing: 4px;
+        font-size: em(12px);
+        margin-bottom: 8px;
+    }
+    &__heading {
+        color: whitesmoke;
+        font-size: em(22px);
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+
+    &__input {
+        display: block;
+        margin: auto;
+    }
+
+    &__button {
+        background-color: $color-primary__soft-red;
+        padding: 14px 40px;
+        border-radius: 6px;
+        margin-top: 16px;
+
+        &--link {
+            color: whitesmoke;
+        }
+    }
+
+}

@@ -23,7 +23,7 @@
    &__one {
     display: block;
     border-bottom: 1px solid gainsboro;
-    line-height: 4;
+    line-height: 3;
     color: $color-neutral__very-dark-blue;
     margin-bottom: 20px;
     background-image: url(../../images/icon-arrow.svg);
@@ -46,7 +46,7 @@
 }
 
 .info-button {
-    @include btn-style(14px, $color-primary__soft-blue, 110px, whitesmoke);
+    @include btn-style(14px 18px, $color-primary__soft-blue, 110px, whitesmoke);
     margin: auto;
     margin-bottom: 110px;
 }
