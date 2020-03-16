@@ -1,4 +1,3 @@
-@import '../abstracts/variables';
 header {
     padding-top: $header-padding;
     padding-bottom: $header-padding;
@@ -15,7 +14,7 @@ header {
     &__bg {
         text-align: center;
         background-color: $color-primary__soft-blue;
-        @include round-shapes(260px, 19vw   , 0 0 0 90px);
+        @include round-shapes(80vw, 53vw, 0 0 0 90px);
         top: 50px;
         right: 0;
         z-index: -1;

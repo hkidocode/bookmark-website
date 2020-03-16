@@ -62,8 +62,8 @@ header {
   .header-image__bg {
     text-align: center;
     background-color: #5368df;
-    width: 260px;
-    height: 19vw;
+    width: 80vw;
+    height: 53vw;
     border-radius: 0 0 0 90px;
     position: absolute;
     top: 50px;
