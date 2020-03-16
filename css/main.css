@@ -15,12 +15,7 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form {
-  width: 80%;
-  margin: auto;
-  text-align: center; }
-
-.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form {
+.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form, .footer, .social {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -68,7 +63,7 @@ header {
     text-align: center;
     background-color: #5368df;
     width: 260px;
-    height: 196px;
+    height: 19vw;
     border-radius: 0 0 0 90px;
     position: absolute;
     top: 50px;
@@ -313,7 +308,7 @@ header {
 .form-section {
   background-color: #5368df;
   padding-top: 60px;
-  padding-bottom: 30px; }
+  padding-bottom: 60px; }
 
 .form__paragraph {
   color: whitesmoke;
@@ -338,3 +333,31 @@ header {
   margin-top: 16px; }
   .form__button--link {
     color: whitesmoke; }
+
+.footer-section {
+  background-color: #252b46;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .footer-section__logo {
+    text-align: center;
+    margin-bottom: 20px; }
+    .footer-section__logo--img {
+      width: 40%;
+      height: 15%; }
+
+.footer {
+  line-height: 2.4; }
+  .footer__item {
+    margin: 0 30px;
+    margin-bottom: 20px; }
+    .footer__item--link {
+      color: whitesmoke;
+      font-size: 0.88889em;
+      font-weight: lighter;
+      letter-spacing: 2px; }
+
+.social__facebook img {
+  margin-right: 20px; }
+
+.social__twitter img {
+  margin-left: 20px; }
