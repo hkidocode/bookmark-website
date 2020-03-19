@@ -109,3 +109,37 @@
     }
 }
  
+@include mq('large') {
+
+    .download-div {
+        width: 48%;
+        margin: auto;
+        text-align: center;
+        
+
+    }
+
+    .download-section {
+        &__heading {
+            @include h-style-m(em(34px));
+        } 
+    
+        &__description {
+            text-indent: 20px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .flex-wrap {
+        @include flexy($just: space-around);
+    }
+
+    .firefox {
+        margin-top: 40px;
+    }
+
+    .opera {
+        margin-top: 80px;
+    }
+
+}

@@ -16,6 +16,7 @@ header {
         text-align: center;
         background-color: $color-primary__soft-blue;
         @include round-shapes(80vw, 53vw, 0 0 0 90px);
+        position: absolute;
         top: 50px;
         right: 0;
         z-index: -1;

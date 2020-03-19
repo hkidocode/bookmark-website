@@ -15,7 +15,7 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .bookmark-section, .download-section, .questions-section, .form, .footer, .social {
+.header, .feature-section, .download-section, .questions-section, .form, .footer, .social {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -102,6 +102,7 @@ header {
     width: 80vw;
     height: 53vw;
     border-radius: 0 0 0 90px;
+    position: absolute;
     position: absolute;
     top: 50px;
     right: 0;
@@ -217,6 +218,7 @@ header {
     height: 52vw;
     border-radius: 0 0 90px 0;
     position: absolute;
+    position: absolute;
     top: 34px;
     left: 0;
     z-index: -1; }
@@ -246,22 +248,38 @@ header {
     .menu__item {
       border-bottom: none; }
       .menu__item:first-child {
-        border-top: none; } }
+        border-top: none; }
+  .bookmark-image__img {
+    width: 40vw;
+    margin-left: 140px; }
+  .bookmark-image__bg {
+    width: 42vw;
+    height: 26vw;
+    border-radius: 0 0 180px 0;
+    position: absolute;
+    top: 80px; } }
 
 .bookmark-section {
   margin-bottom: 120px; }
-  .bookmark-section__heading {
+  .bookmark-section .bookmark__heading {
     color: #003366;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.66667em;
     letter-spacing: 1px; }
-  .bookmark-section__description {
+  .bookmark-section .bookmark__description {
     line-height: 1.7;
     color: #9194a1;
     margin-bottom: 20px;
     font-size: 1em; }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .bookmark-section {
+    display: flex;
+    justify-content: space-around; }
+  .bookmark {
+    margin: 120px 100px; } }
 
 .download-section {
   margin-bottom: 120px; }
@@ -352,6 +370,29 @@ header {
     .opera__button--link {
       color: whitesmoke;
       font-weight: 500; }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .download-div {
+    width: 48%;
+    margin: auto;
+    text-align: center; }
+  .download-section__heading {
+    color: #003366;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.88889em;
+    letter-spacing: 1px; }
+  .download-section__description {
+    text-indent: 20px;
+    margin-bottom: 60px; }
+  .flex-wrap {
+    display: flex;
+    justify-content: space-around; }
+  .firefox {
+    margin-top: 40px; }
+  .opera {
+    margin-top: 80px; } }
 
 .questions-section__heading {
   color: #003366;

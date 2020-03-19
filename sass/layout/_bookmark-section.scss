@@ -1,14 +1,26 @@
 .bookmark-section {
     margin-bottom: 120px;
-    @extend %center;
-    &__heading {
-        @include h-style-m(em(30px));
-    } 
+    .bookmark {
+        &__heading {
+            @include h-style-m(em(30px));
+            
+        } 
 
-    &__description {
-        @include p-style-m(1.7, em(18px));
+        &__description {
+            @include p-style-m(1.7, em(18px));
+        }
     }
 }
 
+
+@include mq('large') {
+    .bookmark-section {
+        @include flexy($just: space-around);
+    }
+
+    .bookmark {
+        margin: 120px 100px;
+    }
+}
 
 
