@@ -47,5 +47,42 @@
     }
 }
 
+@include mq('large') {
+
+    .feature-div {
+        width: 48%;
+        margin: auto;
+        text-align: center;
+        
+
+    }
+
+    .feature-section {
+        &__heading {
+            @include h-style-m(em(34px));
+        } 
+    
+        &__description {
+            text-indent: 20px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .menu {
+        @include flexy($just: space-around);
+        border-bottom: 1px solid grey;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 70px;
+        &__item {
+            border-bottom: none;
+            &:first-child {
+                border-top: none;
+            }
+        
+        }
+    }
+}
+
 
 

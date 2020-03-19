@@ -152,15 +152,16 @@ header {
   .header-image {
     order: 2; }
     .header-image__img {
-      width: 49vw;
-      margin-right: 60px; }
+      width: 46vw;
+      margin-right: 40px; }
     .header-image__bg {
       width: 42vw;
-      height: 26vw;
+      height: 22vw;
       border-radius: 0 0 0 180px;
       position: absolute;
       top: 155px; }
   .header {
+    text-align: left;
     margin-left: 80px;
     margin-right: 80px; }
     .header__heading {
@@ -219,6 +220,33 @@ header {
     top: 34px;
     left: 0;
     z-index: -1; }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .feature-div {
+    width: 48%;
+    margin: auto;
+    text-align: center; }
+  .feature-section__heading {
+    color: #003366;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.88889em;
+    letter-spacing: 1px; }
+  .feature-section__description {
+    text-indent: 20px;
+    margin-bottom: 60px; }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 70px; }
+    .menu__item {
+      border-bottom: none; }
+      .menu__item:first-child {
+        border-top: none; } }
 
 .bookmark-section {
   margin-bottom: 120px; }
