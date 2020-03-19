@@ -23,6 +23,12 @@
     &__input {
         display: block;
         margin: auto;
+        background-color: whitesmoke;
+        width: 100%;
+        padding: 14px 0;
+        border-radius: 6px;
+        font-size: em(18px);
+        text-indent: 10px;
     }
 
     &__button {

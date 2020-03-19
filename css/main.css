@@ -56,7 +56,8 @@ header {
 .header-image {
   text-align: center;
   position: relative;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 60px; }
   .header-image__img {
     width: 92vw; }
   .header-image__bg {
@@ -271,6 +272,7 @@ header {
   font-size: 1em; }
 
 .tab-group {
+  margin: auto;
   text-align: left;
   max-width: 375px;
   width: 100%;
@@ -324,7 +326,13 @@ header {
 
 .form__input {
   display: block;
-  margin: auto; }
+  margin: auto;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 6px;
+  font-size: 1em;
+  text-indent: 10px; }
 
 .form__button {
   background-color: #fa5757;
