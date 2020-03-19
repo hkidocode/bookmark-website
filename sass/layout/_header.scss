@@ -46,3 +46,43 @@ header {
     }
 }
 
+@include mq('large') {
+    header {
+        padding-top: $header-padding-desktop;
+        
+    }
+
+    .main-header {
+        @include flexy($just: space-around);
+    }
+
+    .header-image {
+        order: 2;
+        &__img {
+            width: 49vw;
+            margin-right: 60px;
+        }
+    
+        &__bg {
+            @include round-shapes(42vw, 26vw, 0 0 0 180px);
+            top: 155px;
+        }
+    }
+
+    .header {
+        margin-left: 80px;
+        margin-right: 80px;
+        &__heading {
+            @include h-style-m(em(40px));
+        } 
+        
+        &__buttons {
+            margin-bottom: 120px;
+            &--chrome {
+                margin-right: 0;
+            }
+            
+        }
+    }
+
+}

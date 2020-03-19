@@ -66,7 +66,9 @@
 
 @include mq('large') {
     .navbar {
-        @include flexy($just: space-around);
+        @include flexy($just: space-between);
+        margin: 0 50px;
+        margin-bottom: 40px;
         &__logo {
            &--img {
                width: $tablet-width;
