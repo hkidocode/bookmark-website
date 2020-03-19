@@ -1,6 +1,4 @@
 
-@import '../abstracts/variables';
-
 // Buttons Rounded Corners
 @mixin round-shapes($w, $h, $br-rd: null, $br: null, $pos: absolute) {
     width: $w;
@@ -55,5 +53,24 @@
     font-size: em(16px);
     font-weight: 700;
     color: $color;
+}
+
+// Media Queries 
+@mixin mq($breakpoint)  {
+    @if $breakpoint == 'small' {
+        @media (min-width: $break-s) and (max-width: $break-m) {
+            @content;
+        }
+    }
+    @else if $breakpoint == 'medium' {
+        @media (min-width: $break-m + 1) and (max-width: $break-l) {
+            @content;
+        }
+    }
+    @else if $breakpoint == 'large' {
+        @media (min-width: $break-l + 1) and (max-width: $break-xl) {
+            @content;
+        }
+    }  
 }
 

@@ -21,7 +21,7 @@
         margin: 0 30px;
         border-bottom: 1px solid grey;
         &--link {
-            color: white;
+            color: whitesmoke;
             font-weight: $font-weight__light;
         }
     }
@@ -30,11 +30,71 @@
         margin: 0 30px;
         margin-top: 26px;
         &--link {
-            color: white;
+            color: whitesmoke;
             border: 2px solid grey;
-            border-radius: 3px;
+            border-radius: 6px;
             padding: 10px 96px;
             font-weight: $font-weight__medium;
         }
+    }
+}
+ @include mq('small') {
+     .navbar {
+         &__logo {
+            &--img {
+                width: $tablet-width;
+                height: $tablet-height;
+               }
+         }
+
+     }
+ }
+
+
+ @include mq('medium') {
+    .navbar {
+        &__logo {
+           &--img {
+               width: $tablet-width;
+               height: $tablet-height;
+              }
+        }
+
+    }
+}
+
+
+@include mq('large') {
+    .navbar {
+        @include flexy($just: space-around);
+        &__logo {
+           &--img {
+               width: $tablet-width;
+               height: $tablet-height;
+              }
+        }
+
+        .nav {
+            line-height: 2;
+            background-color: white;
+            @include flexy($just: space-between);
+            &__item {
+                border-bottom: none;
+                &--link {
+                    color: $color-neutral__very-dark-blue;
+                }
+            }
+        
+            &__login {
+                margin-top: 0px;
+                &--link {
+                    color: whitesmoke;
+                    border: none;
+                    background-color: $color-primary__soft-red;
+                    padding: 10px 40px;
+                }
+            }
+        }
+
     }
 }

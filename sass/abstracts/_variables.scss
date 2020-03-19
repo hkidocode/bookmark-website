@@ -21,8 +21,7 @@ $font-weight__medium : 500;
 $break-s : 576px;
 $break-m : 768px;
 $break-l : 992px;
-$break-xl : 1185px;
-$break-xxl : 1400px;
+$break-xl : 1400px;
 
 // Layout
 $max-width : 1000px;
@@ -32,8 +31,17 @@ $gutter: 20px;
 $logo-width : 40%;
 $logo-height : 15%;
 
+// logo tablet dimension
+$tablet-width : 200px;
+$tablet-height: 34px;
+
+// logo desktop dimension
+$desktop-width : 154px;
+$desktop-height : 26px;
+
 // Padding
-$header-padding : 30px;
+$header-padding-mobile : 30px;
+$header-padding-desktop : 100px;
 
 // Margin
 $nav-margin : 20px;

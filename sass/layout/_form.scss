@@ -29,6 +29,9 @@
         border-radius: 6px;
         font-size: em(18px);
         text-indent: 10px;
+        &:focus {
+            border: 2px solid $color-primary__soft-red;
+        }
     }
 
     &__button {

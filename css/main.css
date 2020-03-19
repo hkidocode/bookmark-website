@@ -37,17 +37,51 @@ a {
     margin: 0 30px;
     border-bottom: 1px solid grey; }
     .nav__item--link {
-      color: white;
+      color: whitesmoke;
       font-weight: 400; }
   .nav__login {
     margin: 0 30px;
     margin-top: 26px; }
     .nav__login--link {
-      color: white;
+      color: whitesmoke;
       border: 2px solid grey;
-      border-radius: 3px;
+      border-radius: 6px;
       padding: 10px 96px;
       font-weight: 500; }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar__logo--img {
+    width: 200px;
+    height: 34px; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar__logo--img {
+    width: 200px;
+    height: 34px; } }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around; }
+    .navbar__logo--img {
+      width: 200px;
+      height: 34px; }
+    .navbar .nav {
+      line-height: 2;
+      background-color: white;
+      display: flex;
+      justify-content: space-between; }
+      .navbar .nav__item {
+        border-bottom: none; }
+        .navbar .nav__item--link {
+          color: #252b46; }
+      .navbar .nav__login {
+        margin-top: 0px; }
+        .navbar .nav__login--link {
+          color: whitesmoke;
+          border: none;
+          background-color: #fa5757;
+          padding: 10px 40px; } }
 
 header {
   padding-top: 30px;
@@ -333,6 +367,8 @@ header {
   border-radius: 6px;
   font-size: 1em;
   text-indent: 10px; }
+  .form__input:focus {
+    border: 2px solid #fa5757; }
 
 .form__button {
   background-color: #fa5757;
