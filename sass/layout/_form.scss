@@ -10,39 +10,68 @@
         color: whitesmoke;
         letter-spacing: 4px;
         font-size: em(12px);
-        margin-bottom: 8px;
+        margin-bottom: 20px;
     }
     &__heading {
         color: whitesmoke;
-        font-size: em(22px);
+        font-size: em(24px);
         letter-spacing: 2px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
+    .form-contact {
+        height: 60px;
+        &__input {
+            display: block;
+            background-color: whitesmoke;
+            width: 100%;
+            padding: 14px 0;
+            border-radius: 6px;
+            font-size: em(18px);
+            text-indent: 10px;
+            &:focus {
+                border: 2px solid $color-primary__soft-red;
+            }
+        }
+    
+        &__button {
+            background-color: $color-primary__soft-red;
+            padding: 14px 40px;
+            border-radius: 6px;
+            margin-top: 16px;
+            width: 100%;
+            &--link {
+                color: whitesmoke;
+            }
+        }
+    }
+    
+}
 
-    &__input {
-        display: block;
-        margin: auto;
-        background-color: whitesmoke;
-        width: 100%;
-        padding: 14px 0;
-        border-radius: 6px;
-        font-size: em(18px);
-        text-indent: 10px;
-        &:focus {
-            border: 2px solid $color-primary__soft-red;
+@include mq('large') {
+    .form {
+        &__paragraph {
+            margin-bottom: 40px;
+        }
+        &__heading {
+            font-size: em(32px);
+            width: 46%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 40px;
         }
     }
 
-    &__button {
-        background-color: $color-primary__soft-red;
-        padding: 14px 40px;
-        border-radius: 6px;
-        margin-top: 16px;
+    .form-contact {
+        @include flexy();
+        &__input {
+            width: 30%;
+            margin-right: 40px;
+        }
 
-        &--link {
-            color: whitesmoke;
+        &__button {
+            width: 30%;
+            padding: 19px 0px;
         }
     }
-
 }

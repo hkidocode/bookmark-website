@@ -233,7 +233,7 @@ header {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.88889em;
+    font-size: 1.77778em;
     letter-spacing: 1px; }
   .feature-section__description {
     text-indent: 20px;
@@ -389,8 +389,11 @@ header {
   .flex-wrap {
     display: flex;
     justify-content: space-around; }
+  .chrome {
+    margin-right: 20px; }
   .firefox {
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-right: 20px; }
   .opera {
     margin-top: 80px; } }
 
@@ -444,6 +447,23 @@ header {
   margin: auto;
   margin-bottom: 110px; }
 
+@media (min-width: 993px) and (max-width: 1400px) {
+  .questions-div {
+    width: 46%;
+    margin: auto;
+    text-align: center; }
+  .questions-section {
+    margin-bottom: 180px; }
+    .questions-section__heading {
+      color: #003366;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.77778em;
+      letter-spacing: 1px; }
+    .questions-section__description {
+      margin-bottom: 60px; } }
+
 .form-section {
   background-color: #5368df;
   padding-top: 60px;
@@ -453,33 +473,52 @@ header {
   color: whitesmoke;
   letter-spacing: 4px;
   font-size: 0.66667em;
-  margin-bottom: 8px; }
+  margin-bottom: 20px; }
 
 .form__heading {
   color: whitesmoke;
-  font-size: 1.22222em;
+  font-size: 1.33333em;
   letter-spacing: 2px;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
 
-.form__input {
-  display: block;
-  margin: auto;
-  background-color: whitesmoke;
-  width: 100%;
-  padding: 14px 0;
-  border-radius: 6px;
-  font-size: 1em;
-  text-indent: 10px; }
-  .form__input:focus {
-    border: 2px solid #fa5757; }
+.form .form-contact {
+  height: 60px; }
+  .form .form-contact__input {
+    display: block;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 6px;
+    font-size: 1em;
+    text-indent: 10px; }
+    .form .form-contact__input:focus {
+      border: 2px solid #fa5757; }
+  .form .form-contact__button {
+    background-color: #fa5757;
+    padding: 14px 40px;
+    border-radius: 6px;
+    margin-top: 16px;
+    width: 100%; }
+    .form .form-contact__button--link {
+      color: whitesmoke; }
 
-.form__button {
-  background-color: #fa5757;
-  padding: 14px 40px;
-  border-radius: 6px;
-  margin-top: 16px; }
-  .form__button--link {
-    color: whitesmoke; }
+@media (min-width: 993px) and (max-width: 1400px) {
+  .form__paragraph {
+    margin-bottom: 40px; }
+  .form__heading {
+    font-size: 1.77778em;
+    width: 46%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px; }
+  .form-contact {
+    display: flex; }
+    .form-contact__input {
+      width: 30%;
+      margin-right: 40px; }
+    .form-contact__button {
+      width: 30%;
+      padding: 19px 0px; } }
 
 .footer-section {
   background-color: #252b46;
