@@ -15,7 +15,7 @@ li {
 a {
   text-decoration: none; }
 
-.header, .feature-section, .download-section, .questions-section, .form, .footer, .social {
+.header, .feature-section, .bookmark-section .bookmark, .download-section, .questions-section, .form, .footer, .social {
   width: 80%;
   margin: auto;
   text-align: center; }
@@ -202,7 +202,9 @@ header {
       border-top: 1px solid grey; }
     .menu__item--link {
       color: #9194a1;
-      font-weight: 400; }
+      font-weight: 400;
+      border-bottom: 4px solid #fa5757;
+      padding-bottom: 18px; }
 
 .bookmark-image {
   text-align: center;
@@ -278,8 +280,19 @@ header {
   .bookmark-section {
     display: flex;
     justify-content: space-around; }
+  .bookmark-div {
+    width: 57%;
+    margin: auto;
+    text-align: left; }
   .bookmark {
-    margin: 120px 100px; } }
+    margin: 120px 100px; }
+    .bookmark__heading {
+      color: #003366;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.77778em;
+      letter-spacing: 1px; } }
 
 .download-section {
   margin-bottom: 120px; }
@@ -547,3 +560,21 @@ header {
 
 .social__twitter img {
   margin-left: 20px; }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .footer-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0; }
+    .footer-section__logo {
+      margin-bottom: 0;
+      margin-top: 16px;
+      margin-right: 16px; }
+      .footer-section__logo--img {
+        width: 154px;
+        height: 26px; }
+  .footer {
+    display: flex;
+    line-height: 4; }
+    .footer__item {
+      margin: 0; } }

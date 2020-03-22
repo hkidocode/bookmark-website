@@ -1,12 +1,15 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
 .bookmark-section {
     margin-bottom: 120px;
     .bookmark {
+        @extend %center;
         &__heading {
             @include h-style-m(em(30px));
             
         } 
 
-        &__description {
+        &__description {    
             @include p-style-m(1.7, em(18px));
         }
     }
@@ -18,8 +21,18 @@
         @include flexy($just: space-around);
     }
 
+    .bookmark-div {
+        width: 57%;
+        margin: auto;
+        text-align: left;
+    }
+
     .bookmark {
         margin: 120px 100px;
+        &__heading {
+            @include h-style-m(em(32px));
+        } 
+        
     }
 }
 

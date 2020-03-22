@@ -38,3 +38,27 @@
         margin-left: 20px;
     }
 }
+
+@include mq('large') {
+    .footer-section {
+        @include flexy($just: space-around);
+        padding: 16px 0; 
+        &__logo {
+            margin-bottom: 0;
+            margin-top: 16px;
+            margin-right: 16px;
+            &--img {
+                width: $desktop-width;
+                height: $desktop-height;
+            }
+        }
+    }
+
+    .footer {
+        @include flexy();
+        line-height: 4;
+        &__item {
+            margin: 0;
+        }
+    }
+}
