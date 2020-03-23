@@ -35,13 +35,12 @@
         margin: 0 20px;
         padding: 14px 0;
         border-radius: 6px;
-        &--link {
-            color: whitesmoke;
-            font-weight: $font-weight__medium;
-
+        color: whitesmoke;
+        font-weight: $font-weight__medium;
+        cursor: pointer;
         }
     }
-}
+
 
 .firefox {
     height: 390px;
@@ -68,13 +67,13 @@
         margin: 0 20px;
         padding: 14px 0;
         border-radius: 6px;
-        &--link {
-            color: whitesmoke;
-            font-weight: $font-weight__medium;
+        color: whitesmoke;
+        font-weight: $font-weight__medium;
+        cursor: pointer;
 
         }
     }
-}
+
 
 .opera {
     height: 390px;
@@ -101,13 +100,13 @@
         margin: 0 20px;
         padding: 14px 0;
         border-radius: 6px;
-        &--link {
-            color: whitesmoke;
-            font-weight: $font-weight__medium;
+        color: whitesmoke;
+        font-weight: $font-weight__medium;
+        cursor: pointer;
 
         }
     }
-}
+
  
 @include mq('large') {
 
@@ -137,15 +136,25 @@
 
     .chrome {
         margin-right: 10px;
+        &__button {
+            @include blue-animation();
+           
+        }
     }
 
     .firefox {
         margin-top: 40px;
         margin-right: 10px;
+        &__button {
+            @include blue-animation();
+        }
     }
 
     .opera {
         margin-top: 80px;
+        &__button {
+            @include blue-animation();
+        }
     }
 
 }
