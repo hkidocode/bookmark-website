@@ -196,7 +196,7 @@ header {
         transition-duration: .2s; }
         .header__buttons--chrome:hover {
           color: #5368df;
-          background-color: whitesmoke;
+          background-color: white;
           border: 2px solid #5368df; }
       .header__buttons--firefox {
         transition-property: background-color, border;
@@ -340,7 +340,13 @@ header {
       font-size: 1.77778em;
       letter-spacing: 1px; }
   .info-button {
-    width: 320px; } }
+    width: 320px;
+    transition-property: color, background-color, border;
+    transition-duration: .2s; }
+    .info-button:hover {
+      color: #5368df;
+      background-color: white;
+      border: 2px solid #5368df; } }
 
 .download-section {
   margin-bottom: 120px; }

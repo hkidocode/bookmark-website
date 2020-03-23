@@ -43,6 +43,13 @@
 
     .info-button {
         width: 320px;
+        transition-property: color, background-color, border;
+        transition-duration: .2s;
+            &:hover {
+                color: $color-primary__soft-blue;
+                background-color: white;
+                border: 2px solid $color-primary__soft-blue;
+            }
     }
 }
 
