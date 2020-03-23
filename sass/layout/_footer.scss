@@ -46,7 +46,8 @@
         &__logo {
             margin-bottom: 0;
             margin-top: 16px;
-            margin-right: 16px;
+            margin-right: 80px;
+            margin-left: 140px;
             &--img {
                 width: $desktop-width;
                 height: $desktop-height;
@@ -55,10 +56,17 @@
     }
 
     .footer {
-        @include flexy();
+        @include flexy($just: space-between);
+        max-width: 300px;
         line-height: 4;
         &__item {
             margin: 0;
+            
         }
+    }
+
+    .social {
+        text-align: right;
+        margin-right: 160px;
     }
 }

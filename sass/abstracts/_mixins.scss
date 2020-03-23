@@ -45,11 +45,12 @@
 }
 
 // Button Style 
-@mixin btn-style($pd, $bg-color, $w, $color) {
-    padding: $pd;
+@mixin btn-style($bg-color, $w, $color) {
     background-color: $bg-color;
     width: $w;
+    height: 40px;
     border-radius: 6px;
+    padding-top: 10px;
     font-size: em(16px);
     font-weight: 700;
     color: $color;

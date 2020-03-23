@@ -47,8 +47,9 @@
 }
 
 .info-button {
-    @include btn-style(14px 18px, $color-primary__soft-blue, 110px, whitesmoke);
-    margin: auto;
+    @include btn-style($color-primary__soft-blue, 110px, whitesmoke);
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 110px;
 }
 
@@ -71,5 +72,6 @@
                 margin-bottom: 60px;
             }
         }
+
     
 }

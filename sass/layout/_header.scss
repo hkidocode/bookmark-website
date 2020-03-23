@@ -37,11 +37,13 @@ header {
         @include flexy($just: space-around);
         margin-bottom: 120px;
         &--chrome {
-            @include btn-style(14px, $color-primary__soft-blue, 150px, whitesmoke);
+            @include btn-style($color-primary__soft-blue, 150px, whitesmoke);
             margin-right: 20px;
+            text-align: center;
         }
         &--firefox {
-            @include btn-style(14px, whitesmoke, 150px, $color-neutral__grayish-blue);
+            @include btn-style(whitesmoke, 150px, $color-neutral__grayish-blue);
+            text-align: center;
 
         }
     }
@@ -50,7 +52,10 @@ header {
 @include mq('large') {
     header {
         padding-top: $header-padding-desktop;
-        
+
+        &__buttons {
+            text-align: left;
+        }
     }
 
     .main-header {
@@ -80,9 +85,7 @@ header {
         
         &__buttons {
             margin-bottom: 120px;
-            &--chrome {
-                margin-right: 0;
-            }
+            width: 320px;
             
         }
     }

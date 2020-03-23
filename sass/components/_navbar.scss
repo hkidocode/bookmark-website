@@ -84,16 +84,31 @@
                 border-bottom: none;
                 &--link {
                     color: $color-neutral__very-dark-blue;
+                    transition-property: color;
+                    transition-duration: .2s;
+                    &:hover {
+                        color: $color-primary__soft-red;
+                    }
+
                 }
             }
         
             &__login {
                 margin-top: 0px;
+                
                 &--link {
                     color: whitesmoke;
                     border: none;
                     background-color: $color-primary__soft-red;
                     padding: 10px 40px;
+                    transition-property: color, background-color, border;
+                    transition-duration: .2s;
+                    &:hover {
+                        color: $color-primary__soft-red;
+                        background-color: whitesmoke;
+                        border: 2px solid $color-primary__soft-red;
+                    }
+                    
                 }
             }
         }

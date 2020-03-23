@@ -12,7 +12,7 @@
 
 .chrome {
     height: 390px;
-    border: 1px solid gainsboro;
+    border: 1px solid whitesmoke;
     border-radius: 12px;
     margin-bottom: 36px;
     &__img {
@@ -45,7 +45,7 @@
 
 .firefox {
     height: 390px;
-    border: 1px solid gainsboro;
+    border: 1px solid whitesmoke;
     border-radius: 12px;
     margin-bottom: 36px;
     &__img {
@@ -78,7 +78,7 @@
 
 .opera {
     height: 390px;
-    border: 1px solid gainsboro;
+    border: 1px solid whitesmoke;
     border-radius: 12px;
     margin-bottom: 36px;
     &__img {
@@ -132,15 +132,16 @@
 
     .flex-wrap {
         @include flexy($just: space-around);
+        max-width: 890px;
     }
 
     .chrome {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .firefox {
         margin-top: 40px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .opera {

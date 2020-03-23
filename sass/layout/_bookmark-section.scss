@@ -1,5 +1,3 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
 .bookmark-section {
     margin-bottom: 120px;
     .bookmark {
@@ -13,10 +11,18 @@
             @include p-style-m(1.7, em(18px));
         }
     }
+
+    .info-button {
+        @include btn-style($color-primary__soft-blue, 110px, whitesmoke);
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 110px;
+    }
 }
 
 
 @include mq('large') {
+
     .bookmark-section {
         @include flexy($just: space-around);
     }
@@ -33,6 +39,10 @@
             @include h-style-m(em(32px));
         } 
         
+    }
+
+    .info-button {
+        width: 320px;
     }
 }
 
