@@ -4,6 +4,7 @@ $color-primary__soft-red : hsl(0, 94%, 66%);
 $color-neutral__grayish-blue : hsl(229, 8%, 60%);
 $color-neutral__very-dark-blue : hsl(229, 31%, 21%);
 $color-neutral__light-dark-blue : rgba(0, 51, 102, 1);
+$color-neutral__grayish-dark-blue: lighten(hsl(229, 8%, 60%), 20%);
 
 
 // Text
