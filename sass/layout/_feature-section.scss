@@ -22,9 +22,11 @@
         &--link {
             color: $color-neutral__grayish-blue;
             font-weight: $font-weight__light;
-            border-bottom: 4px solid $color-primary__soft-red;
             padding-bottom: 18px;
+        }
 
+        .red-border-bottom {
+            border-bottom: 4px solid $color-primary__soft-red;
         }
     }
 }
@@ -81,6 +83,14 @@
             border-bottom: none;
             &:first-child {
                 border-top: none;
+            }
+            &--link {
+                transition-property: border-bottom;
+                transition-duration: .1s;
+                &:hover {
+                    border-bottom: 4px solid $color-primary__soft-red;
+
+                }
             }
         
         }

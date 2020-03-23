@@ -231,8 +231,9 @@ header {
     .menu__item--link {
       color: #9194a1;
       font-weight: 400;
-      border-bottom: 4px solid #fa5757;
       padding-bottom: 18px; }
+    .menu__item .red-border-bottom {
+      border-bottom: 4px solid #fa5757; }
 
 .bookmark-image {
   text-align: center;
@@ -279,6 +280,11 @@ header {
       border-bottom: none; }
       .menu__item:first-child {
         border-top: none; }
+      .menu__item--link {
+        transition-property: border-bottom;
+        transition-duration: .1s; }
+        .menu__item--link:hover {
+          border-bottom: 4px solid #fa5757; }
   .bookmark-image__img {
     width: 40vw;
     margin-left: 140px; }
