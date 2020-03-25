@@ -277,16 +277,19 @@ header {
     margin: auto;
     margin-bottom: 70px; }
     .menu__item {
-      border-bottom: none; }
+      border-bottom: none;
+      cursor: pointer; }
       .menu__item:first-child {
         border-top: none; }
       .menu__item--link {
+        cursor: pointer;
         transition-property: border-bottom;
         transition-duration: .1s; }
         .menu__item--link:hover {
           border-bottom: 4px solid #fa5757; }
   .bookmark-image__img {
     width: 40vw;
+    height: 27vw;
     margin-left: 140px; }
   .bookmark-image__bg {
     width: 42vw;
@@ -455,8 +458,8 @@ header {
     text-indent: 20px;
     margin-bottom: 60px; }
   .flex-wrap {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    margin: auto;
     max-width: 890px; }
   .chrome {
     margin-right: 10px; }
@@ -521,8 +524,9 @@ header {
     background-position: right;
     font-size: 0.94444em; }
   .tab__content {
-    height: 0;
-    overflow: hidden; }
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out; }
   .tab__content p {
     margin: 1em 0; }
 
@@ -539,6 +543,13 @@ header {
   margin-left: auto;
   margin-bottom: 110px; }
 
+.is-clicked {
+  background-image: url(../../images/icon-arrow-red.png);
+  transition: background-image .4s ease-in-out; }
+
+.open {
+  max-height: 20em; }
+
 @media (min-width: 993px) and (max-width: 1400px) {
   .questions-div {
     width: 46%;
@@ -554,7 +565,13 @@ header {
       font-size: 1.77778em;
       letter-spacing: 1px; }
     .questions-section__description {
-      margin-bottom: 60px; } }
+      margin-bottom: 60px; }
+  .tab__one {
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: .4s; }
+    .tab__one:hover {
+      color: #fa5757; } }
 
 .form-section {
   background-color: #5368df;
@@ -573,32 +590,35 @@ header {
   letter-spacing: 2px;
   margin-bottom: 40px; }
 
-.form .form-contact {
-  height: 60px; }
-  .form .form-contact__input {
-    display: block;
-    background-color: whitesmoke;
-    width: 100%;
-    padding: 14px 0;
-    border-radius: 6px;
-    font-size: 1em;
-    text-indent: 10px; }
-    .form .form-contact__input:focus {
-      border: 2px solid #fa5757; }
-  .form .form-contact__button {
-    background-color: #fa5757;
-    padding: 14px 40px;
-    border-radius: 6px;
-    margin-top: 16px;
-    width: 100%; }
-    .form .form-contact__button--link {
-      color: whitesmoke; }
+.form .form-contact__input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  height: 47px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  font-size: 1em;
+  text-indent: 20px; }
+  .form .form-contact__input:focus {
+    border: 2px solid #fa5757; }
+
+.form .form-contact__button {
+  display: block;
+  background-color: #fa5757;
+  padding: 14px 0;
+  border-radius: 3px;
+  height: 47px; }
+  .form .form-contact__button--link {
+    color: whitesmoke; }
 
 @media (min-width: 993px) and (max-width: 1400px) {
   .form-section {
     padding-bottom: 60px; }
   .form__paragraph {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 0.88889em; }
   .form__heading {
     font-size: 1.77778em;
     width: 46%;
@@ -606,13 +626,15 @@ header {
     text-align: center;
     margin-bottom: 40px; }
   .form-contact {
-    display: flex; }
+    display: inline-flex;
+    width: 40%; }
     .form-contact__input {
-      width: 30%;
-      margin-right: 40px; }
+      margin-right: 25px;
+      margin-bottom: 0px;
+      font-size: 1.11111em;
+      width: 70%; }
     .form-contact__button {
-      width: 30%;
-      padding: 19px 0px; } }
+      width: 45%; } }
 
 .footer-section {
   background-color: #252b46;
@@ -662,6 +684,12 @@ header {
     line-height: 4; }
     .footer__item {
       margin: 0; }
+      .footer__item--link:hover {
+        color: #fa5757; }
   .social {
     text-align: right;
-    margin-right: 160px; } }
+    margin-right: 160px; }
+  .facebook:hover {
+    background-color: #fa5757; }
+  .twitter:hover {
+    background-color: #fa5757; } }

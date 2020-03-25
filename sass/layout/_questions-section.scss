@@ -35,8 +35,10 @@
    } 
 
     &__content {
-        height: 0;
+        max-height: 0;
         overflow: hidden;
+        transition: max-height .3s ease-in-out;
+       
         
     }
 
@@ -52,6 +54,19 @@
     margin-left: auto;
     margin-bottom: 110px;
 }
+
+
+
+.is-clicked {
+    background-image: url(../../images/icon-arrow-red.png);
+    transition: background-image .4s ease-in-out;
+}
+
+.open {
+    max-height: 20em;
+}
+
+
 
 @include mq('large') {
         .questions-div {
@@ -70,6 +85,17 @@
         
             &__description {
                 margin-bottom: 60px;
+            }
+        }
+
+        .tab {
+            &__one {
+                cursor: pointer;
+                transition-property: color;
+                transition-duration: .4s;
+                &:hover {
+                    color: hsl(0, 94%, 66%);
+                }
             }
         }
 

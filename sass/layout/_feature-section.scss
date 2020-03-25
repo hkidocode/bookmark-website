@@ -81,10 +81,12 @@
         margin-bottom: 70px;
         &__item {
             border-bottom: none;
+            cursor: pointer;
             &:first-child {
                 border-top: none;
             }
             &--link {
+                cursor: pointer;
                 transition-property: border-bottom;
                 transition-duration: .1s;
                 &:hover {
@@ -99,6 +101,7 @@
     .bookmark-image {
         &__img {
             width: 40vw;
+            height: 27vw;
             margin-left: 140px;
         }
         &__bg {

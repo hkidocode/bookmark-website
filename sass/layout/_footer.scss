@@ -61,6 +61,11 @@
         line-height: 4;
         &__item {
             margin: 0;
+            &--link {
+                &:hover {
+                    color: hsl(0, 94%, 66%);
+                }
+            }
             
         }
     }
@@ -68,5 +73,15 @@
     .social {
         text-align: right;
         margin-right: 160px;
+        
+        
+    }
+
+    .facebook:hover {
+        background-color: hsl(0, 94%, 66%);
+    }
+
+    .twitter:hover {
+        background-color: hsl(0, 94%, 66%);
     }
 }

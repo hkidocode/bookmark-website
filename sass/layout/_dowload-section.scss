@@ -130,7 +130,8 @@
     }
 
     .flex-wrap {
-        @include flexy($just: space-around);
+        display: inline-flex;
+        margin: auto;
         max-width: 890px;
     }
 
