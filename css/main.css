@@ -232,8 +232,8 @@ header {
       color: #9194a1;
       font-weight: 400;
       padding-bottom: 18px; }
-    .menu__item .red-border-bottom {
-      border-bottom: 4px solid #fa5757; }
+  .menu .button--active {
+    border-bottom: 3px solid #fa5757; }
 
 .bookmark-image {
   text-align: center;
@@ -241,12 +241,36 @@ header {
   margin-bottom: 80px; }
   .bookmark-image__img {
     width: 80vw; }
-  .bookmark-image__bg {
+  .bookmark-image__bg--first {
     margin-bottom: 40px;
     text-align: center;
     background-color: #5368df;
     width: 80vw;
     height: 52vw;
+    border-radius: 0 0 90px 0;
+    position: absolute;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: -1; }
+  .bookmark-image__bg--second {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #5368df;
+    width: 68vw;
+    height: 66vw;
+    border-radius: 0 0 90px 0;
+    position: absolute;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: -1; }
+  .bookmark-image__bg--third {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #5368df;
+    width: 73vw;
+    height: 68vw;
     border-radius: 0 0 90px 0;
     position: absolute;
     position: absolute;
@@ -281,17 +305,29 @@ header {
       cursor: pointer; }
       .menu__item:first-child {
         border-top: none; }
+      .menu__item--active {
+        border-bottom: 4px solid #fa5757; }
       .menu__item--link {
         cursor: pointer;
         transition-property: border-bottom;
         transition-duration: .1s; }
-        .menu__item--link:hover {
-          border-bottom: 4px solid #fa5757; }
   .bookmark-image__img {
     width: 40vw;
     height: 27vw;
     margin-left: 140px; }
-  .bookmark-image__bg {
+  .bookmark-image__bg--first {
+    width: 42vw;
+    height: 26vw;
+    border-radius: 0 0 180px 0;
+    position: absolute;
+    top: 80px; }
+  .bookmark-image__bg--second {
+    width: 42vw;
+    height: 26vw;
+    border-radius: 0 0 180px 0;
+    position: absolute;
+    top: 80px; }
+  .bookmark-image__bg--third {
     width: 42vw;
     height: 26vw;
     border-radius: 0 0 180px 0;
@@ -299,6 +335,7 @@ header {
     top: 80px; } }
 
 .bookmark-section {
+  display: none;
   margin-bottom: 120px; }
   .bookmark-section .bookmark__heading {
     color: #003366;
@@ -324,9 +361,11 @@ header {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 110px; }
+  .bookmark-section--active {
+    display: block; }
 
 @media (min-width: 993px) and (max-width: 1400px) {
-  .bookmark-section {
+  .bookmark-section--active {
     display: flex;
     justify-content: space-around; }
   .bookmark-div {
@@ -606,12 +645,15 @@ header {
 
 .form .form-contact__button {
   display: block;
+  width: 100%;
+  outline: none;
+  border: none;
   background-color: #fa5757;
   padding: 14px 0;
   border-radius: 3px;
-  height: 47px; }
-  .form .form-contact__button--link {
-    color: whitesmoke; }
+  font-weight: 600;
+  height: 47px;
+  color: whitesmoke; }
 
 @media (min-width: 993px) and (max-width: 1400px) {
   .form-section {
@@ -629,12 +671,20 @@ header {
     display: inline-flex;
     width: 40%; }
     .form-contact__input {
+      width: 70%;
+      display: inline-block;
       margin-right: 25px;
       margin-bottom: 0px;
-      font-size: 1.11111em;
-      width: 70%; }
+      font-size: 1.11111em; }
     .form-contact__button {
-      width: 45%; } }
+      display: inline-block;
+      width: 45%;
+      transition-property: color, background-color, border;
+      transition-duration: .2s; }
+      .form-contact__button:hover {
+        color: #fa5757;
+        background-color: whitesmoke;
+        border: 2px solid #fa5757; } }
 
 .footer-section {
   background-color: #252b46;
@@ -690,6 +740,6 @@ header {
     text-align: right;
     margin-right: 160px; }
   .facebook:hover {
-    background-color: #fa5757; }
+    fill: #fa5757; }
   .twitter:hover {
-    background-color: #fa5757; } }
+    fill: #fa5757; } }

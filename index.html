@@ -50,27 +50,64 @@
             </p>
         </div>
         <ul class="menu">
-            <li class="menu__item"><a class="item1 menu__item--link">Simple Bookmarking</a></li>
-            <li class="menu__item"><a class="item2 menu__item--link">Speedy Searching</a></li>
-            <li class="menu__item"><a class="item3 menu__item--link">Easy Sharing</a></li>
+            <li class="menu__item button--active" data-for-tab="1"><a class="item1 menu__item--link">Simple
+                    Bookmarking</a></li>
+            <li class="menu__item" data-for-tab="2"><a class="item2 menu__item--link">Speedy Searching</a></li>
+            <li class="menu__item" data-for-tab="3"><a class="item3 menu__item--link">Easy Sharing</a></li>
+        </ul>
     </section>
-    <section class="bookmark-section">
-        <div class="bookmark-image">
-            <img class="bookmark-image__img" src="images/illustration-features-tab-1.svg" alt="Bookmark">
-            <div class="bookmark-image__bg"></div>
-        </div>
-        <div class="bookmark">
-            <div class="bookmark-div">
-                <h2 class="bookmark__heading">Bookmark in one click</h2>
-                <p class="bookmark__description">
-                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-                    control over how you manage your favourite
-                    sites.
-                </p>
+    <div class="container">
+        <section class="bookmark-section bookmark-section--active" data-tab="1">
+            <div class="bookmark-image">
+                <img class="bookmark-image__img" src="images/illustration-features-tab-1.svg" alt="Bookmark">
+                <div class="bookmark-image__bg--first"></div>
             </div>
-            <div class="info-button">More Info</div>
-        </div>
-    </section>
+            <div class="bookmark">
+                <div class="bookmark-div">
+                    <h2 class="bookmark__heading">Bookmark in one click</h2>
+                    <p class="bookmark__description">
+                        Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                        control over how you manage your favourite
+                        sites.
+                    </p>
+                </div>
+                <div class="info-button">More Info</div>
+            </div>
+        </section>
+        <section class="bookmark-section" data-tab="2">
+            <div class="bookmark-image">
+                <img class="bookmark-image__img" src="images/illustration-features-tab-2.svg" alt="Bookmark">
+                <div class="bookmark-image__bg--second"></div>
+            </div>
+            <div class="bookmark">
+                <div class="bookmark-div">
+                    <h2 class="bookmark__heading">Intelligent search</h2>
+                    <p class="bookmark__description">
+                        Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+                        through all of your bookmarks.
+                    </p>
+                </div>
+                <div class="info-button">More Info</div>
+            </div>
+        </section>
+        <section class="bookmark-section" data-tab="3">
+            <div class="bookmark-image">
+                <img class="bookmark-image__img" src="images/illustration-features-tab-3.svg" alt="Bookmark">
+                <div class="bookmark-image__bg--third"></div>
+            </div>
+            <div class="bookmark">
+                <div class="bookmark-div">
+                    <h2 class="bookmark__heading">Share your bookmarks</h2>
+                    <p class="bookmark__description">
+                        Easily share your bookmarks and collection with others. Create a shareable link that you can
+                        send at
+                        the click of a button.
+                    </p>
+                </div>
+                <div class="info-button">More Info</div>
+            </div>
+        </section>
+    </div>
     <section class="download-section">
         <div class="download-div">
             <h2 class="download-section__heading">Download the extension</h2>
@@ -154,7 +191,7 @@
             <h2 class="form__heading">Stay up-to-date with what we’re doing</h2>
             <div class="form-contact">
                 <input type="text" placeholder="Enter your adress email" class="form-contact__input">
-                <div class="form-contact__button"><a href="#" class="form-contact__button--link">Contact Us</a></div>
+                <button class="form-contact__button">Contact Us</button>
             </div>
         </div>
     </section>

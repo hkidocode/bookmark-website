@@ -24,12 +24,14 @@
             font-weight: $font-weight__light;
             padding-bottom: 18px;
         }
-
-        .red-border-bottom {
-            border-bottom: 4px solid $color-primary__soft-red;
-        }
+        
+    }
+    .button--active {
+        border-bottom: 3px solid $color-primary__soft-red;
     }
 }
+
+
 
 .bookmark-image {
     text-align: center;
@@ -39,11 +41,35 @@
         width: 80vw;
     }
 
-    &__bg {
+    &__bg--first {
         margin-bottom: 40px;
         text-align: center;
         background-color: $color-primary__soft-blue;
         @include round-shapes(80vw, 52vw,0 0 90px 0);
+        position: absolute;
+        top: 34px;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    &__bg--second {
+        margin-bottom: 40px;
+        text-align: center;
+        background-color: $color-primary__soft-blue;
+        @include round-shapes(68vw, 66vw,0 0 90px 0);
+        position: absolute;
+        top: 34px;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    &__bg--third {
+        margin-bottom: 40px;
+        text-align: center;
+        background-color: $color-primary__soft-blue;
+        @include round-shapes(73vw, 68vw,0 0 90px 0);
         position: absolute;
         top: 34px;
         left: 0;
@@ -85,14 +111,14 @@
             &:first-child {
                 border-top: none;
             }
+            &--active {
+                border-bottom: 4px solid $color-primary__soft-red;
+    
+            }
             &--link {
                 cursor: pointer;
                 transition-property: border-bottom;
                 transition-duration: .1s;
-                &:hover {
-                    border-bottom: 4px solid $color-primary__soft-red;
-
-                }
             }
         
         }
@@ -104,7 +130,17 @@
             height: 27vw;
             margin-left: 140px;
         }
-        &__bg {
+        &__bg--first {
+            @include round-shapes(42vw, 26vw, 0 0 180px 0);
+            top: 80px;
+        }
+
+        &__bg--second {
+            @include round-shapes(42vw, 26vw, 0 0 180px 0);
+            top: 80px;
+        }
+
+        &__bg--third {
             @include round-shapes(42vw, 26vw, 0 0 180px 0);
             top: 80px;
         }

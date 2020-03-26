@@ -22,7 +22,7 @@
     .form-contact {
         &__input {
             display: block;
-            width: 100% ;
+            width: 100%;
             outline: none;
             border: none;
             background-color: whitesmoke;
@@ -38,13 +38,16 @@
     
         &__button {
             display: block;
+            width: 100%;
+            outline: none;
+            border: none;
             background-color: $color-primary__soft-red;
             padding: 14px 0;
             border-radius: 3px;
+            font-weight: 600;
             height: 47px;
-            &--link {
-                color: whitesmoke;
-            }
+            color: whitesmoke;
+            
         }
     }
     
@@ -74,14 +77,25 @@
         display: inline-flex;
         width: 40%;
         &__input {
+            width: 70%;
+            display: inline-block;
             margin-right: 25px;
             margin-bottom: 0px;
             font-size: em(20px);
-            width: 70%;
+            
         }
 
         &__button {
+            display: inline-block;
             width: 45%;
+            transition-property: color, background-color, border;
+            transition-duration: .2s;
+                &:hover {
+                color: $color-primary__soft-red;
+                background-color: whitesmoke;
+                border: 2px solid $color-primary__soft-red;
+            }
+           
         }
     }
 }

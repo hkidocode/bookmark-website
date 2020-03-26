@@ -1,4 +1,5 @@
 .bookmark-section {
+    display: none;
     margin-bottom: 120px;
     .bookmark {
         @extend %center;
@@ -18,13 +19,22 @@
         margin-left: auto;
         margin-bottom: 110px;
     }
+
+    &--active {
+        display: block;
+    }
 }
+
+
 
 
 @include mq('large') {
 
     .bookmark-section {
+        &--active {
         @include flexy($just: space-around);
+    }
+    
     }
 
     .bookmark-div {
