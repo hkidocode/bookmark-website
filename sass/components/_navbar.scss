@@ -1,25 +1,33 @@
 
 .navbar {
+    text-align: center;
    &__logo {
-        text-align: left;
-        margin-right: $nav-margin;
-        margin-left: $nav-margin;
-        margin-bottom: $nav-margin;
+       @include flexy($just: space-between);
+        padding-right: $nav-margin;
+        padding-left: $nav-margin;
+        padding-bottom: $nav-margin;
+        padding-top: $header-padding-mobile;
+        // background-color: $color-neutral__light-dark-blue;
        &--img {
         width: $logo-width;
         height: $logo-height;
        }
+       &--icn {
+        width: 30px;
+        height: 20px;
+    }   
    }
 
 }
 
 .nav {
-    text-align: center;
+    // display: none;
     line-height: 4;
     background-color: $color-neutral__light-dark-blue;
+    padding-bottom: 20px;
     &__item {
         margin: 0 30px;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid gainsboro;
         &--link {
             color: whitesmoke;
             font-weight: $font-weight__light;
@@ -31,11 +39,15 @@
         margin-top: 26px;
         &--link {
             color: whitesmoke;
-            border: 2px solid grey;
+            border: 2px solid whitesmoke;
             border-radius: 6px;
             padding: 10px 96px;
             font-weight: $font-weight__medium;
         }
+    }
+
+    .social-nav {
+        margin-top: 140px;
     }
 }
  @include mq('small') {
@@ -70,15 +82,25 @@
         margin: 0 50px;
         margin-bottom: 40px;
         &__logo {
+            padding-left: 0;
+            padding-top: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            background-color: white;
            &--img {
                width: $tablet-width;
                height: $tablet-height;
               }
+            &--icn {
+                display: none;
+            }
         }
 
         .nav {
+            text-align: center;
             line-height: 2;
             background-color: white;
+            padding-bottom: 0;
             @include flexy($just: space-between);
             &__item {
                 border-bottom: none;
@@ -113,5 +135,8 @@
             }
         }
 
+    }
+    .social-nav {
+        display: none;
     }
 }

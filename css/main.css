@@ -20,22 +20,29 @@ a {
   margin: auto;
   text-align: center; }
 
-.navbar__logo {
-  text-align: left;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px; }
-  .navbar__logo--img {
-    width: 40%;
-    height: 15%; }
+.navbar {
+  text-align: center; }
+  .navbar__logo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px; }
+    .navbar__logo--img {
+      width: 40%;
+      height: 15%; }
+    .navbar__logo--icn {
+      width: 30px;
+      height: 20px; }
 
 .nav {
-  text-align: center;
   line-height: 4;
-  background-color: #003366; }
+  background-color: #3f4a78;
+  padding-bottom: 20px; }
   .nav__item {
     margin: 0 30px;
-    border-bottom: 1px solid grey; }
+    border-bottom: 1px solid gainsboro; }
     .nav__item--link {
       color: whitesmoke;
       font-weight: 400; }
@@ -44,10 +51,12 @@ a {
     margin-top: 26px; }
     .nav__login--link {
       color: whitesmoke;
-      border: 2px solid grey;
+      border: 2px solid whitesmoke;
       border-radius: 6px;
       padding: 10px 96px;
       font-weight: 500; }
+  .nav .social-nav {
+    margin-top: 140px; }
 
 @media (min-width: 576px) and (max-width: 768px) {
   .navbar__logo--img {
@@ -65,12 +74,22 @@ a {
     justify-content: space-between;
     margin: 0 50px;
     margin-bottom: 40px; }
-    .navbar__logo--img {
-      width: 200px;
-      height: 34px; }
+    .navbar__logo {
+      padding-left: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      background-color: white; }
+      .navbar__logo--img {
+        width: 200px;
+        height: 34px; }
+      .navbar__logo--icn {
+        display: none; }
     .navbar .nav {
+      text-align: center;
       line-height: 2;
       background-color: white;
+      padding-bottom: 0;
       display: flex;
       justify-content: space-between; }
       .navbar .nav__item {
@@ -93,10 +112,11 @@ a {
           .navbar .nav__login--link:hover {
             color: #fa5757;
             background-color: whitesmoke;
-            border: 2px solid #fa5757; } }
+            border: 2px solid #fa5757; }
+  .social-nav {
+    display: none; } }
 
 header {
-  padding-top: 30px;
   padding-bottom: 30px; }
 
 .header-image {
@@ -119,7 +139,7 @@ header {
     z-index: -1; }
 
 .header__heading {
-  color: #003366;
+  color: #3f4a78;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -182,7 +202,7 @@ header {
     margin-left: 80px;
     margin-right: 80px; }
     .header__heading {
-      color: #003366;
+      color: #3f4a78;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -206,7 +226,7 @@ header {
           border: 2px solid #c8c9d0; } }
 
 .feature-section__heading {
-  color: #003366;
+  color: #3f4a78;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -284,7 +304,7 @@ header {
     margin: auto;
     text-align: center; }
   .feature-section__heading {
-    color: #003366;
+    color: #3f4a78;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -338,7 +358,7 @@ header {
   display: none;
   margin-bottom: 120px; }
   .bookmark-section .bookmark__heading {
-    color: #003366;
+    color: #3f4a78;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -375,7 +395,7 @@ header {
   .bookmark {
     margin: 120px 100px; }
     .bookmark__heading {
-      color: #003366;
+      color: #3f4a78;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -394,7 +414,7 @@ header {
 .download-section {
   margin-bottom: 120px; }
   .download-section__heading {
-    color: #003366;
+    color: #3f4a78;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -487,7 +507,7 @@ header {
     margin: auto;
     text-align: center; }
   .download-section__heading {
-    color: #003366;
+    color: #3f4a78;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -530,7 +550,7 @@ header {
         border: 2px solid #5368df; } }
 
 .questions-section__heading {
-  color: #003366;
+  color: #3f4a78;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -597,7 +617,7 @@ header {
   .questions-section {
     margin-bottom: 180px; }
     .questions-section__heading {
-      color: #003366;
+      color: #3f4a78;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 20px;
